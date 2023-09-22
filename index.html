@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>Personal Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-blue w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-teal w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="c:\Users\Aries\Downloads\html\222.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-text-black">I'am Clarean</p>
+  </div>
+  
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <!-- Left Column -->
+
+        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-white"></i>Skills</b></p>
+        <p>PLAYING</p>
+        <div class="w3-white w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:90%">100%</div>
+        </div>
+        <p>EDITING</p>
+        <div class="w3-white w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:80%">
+            <div class="w3-center w3-text-white">50%</div>
+          </div>
+        </div>
+        <p>PROGRAMMING</p>
+        <div class="w3-white w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:75%">100%</div>
+        </div>
+        <p>DESIGNING</p>
+        <div class="w3-white w3-round-xlarge w3-small">
+          <div class="w3-container w3-center w3-round-xlarge w3-black" style="width:50%">50%</div>
+        </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()"  title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="c:\Users\Aries\Downloads\html\333.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      
+      <div class="w3-container w3-light-blue">
+        <h2>EDUCATION</h2>
+
+<li> Elementary</li>
+<p>Star Elementary School (2009-2015)</p>
+<li> High School</li>
+<p>Benigno Aquino Jr. High School (2015-2019)</p>
+<li> Senior High</li>
+<p>Cieverose College Inc (2019-2021)  </p>
+<li>College </li>
+<p>St. Clare College (2021-Present) </p>
+
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      
+      <div class="w3-container w3-light-blue">
+        <h2>QUALIFICATIONS</h2>
+<li>Willing to learn</li>
+<li>Hard Working</li>
+<li>Friendly</li>
+<li>Good listener</li>
+<li>Good at Communication skill</li>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      
+      
+    </div>
+  </div>
+  
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h2>ACHIVEMENTS</h2>
+<li>player in codm since birth <i>(July 16 2003)</i></li>
+
+    
+   
+  </div>
+  <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <p>Find me on social media.</p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    
+  </footer>
+  
+  
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
